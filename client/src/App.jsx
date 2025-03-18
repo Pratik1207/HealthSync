@@ -36,16 +36,16 @@ function App() {
             <Route path="/" element={<Roles />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<SignUp />} />
-            <Route path="/dashboard" element={<Dashboard/>} />
+            {/* <Route path="/dashboard" element={<Dashboard/>} />
             <Route path="/home" element={ <HomePage />} />
             <Route path="/appointments" element={ <Appointments/> } />
             <Route path="/profile" element={<Profile/>} />
-            <Route path="/updateprofile" element={<UpdateProfile/>} />
+            <Route path="/updateprofile" element={<UpdateProfile/>} /> */}
             <Route path ="/doctorlist" element={ <DoctorList/> } />
             <Route path="/bookappointment" element={ <AppointmentForm/> } />
 
  
-            {/* Protected Routes
+            Protected Routes
             <Route
               path="/dashboard"
               element={
@@ -89,7 +89,7 @@ function App() {
                 <ProtectedRoutes>
                   <UpdateProfile/>
                 </ProtectedRoutes>
-              } /> */}
+              } />
           </Routes>
         </UserAuthContextProvider>
       </div>
