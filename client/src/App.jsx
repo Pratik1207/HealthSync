@@ -68,7 +68,7 @@ function App() {
               path="/appointments"
               element={
                 <ProtectedRoutes>
-                  <RoleBasedRoute allowedRoles={["PATIENT"]}>
+                  <RoleBasedRoute allowedRoles={["DOCTOR"]}>
                     <Appointments />
                   </RoleBasedRoute>
                 </ProtectedRoutes>
